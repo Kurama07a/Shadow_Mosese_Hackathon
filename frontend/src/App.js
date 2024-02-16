@@ -7,6 +7,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import CreateProfile from './pages/createprofile';
 import PostCreationForm from './pages/post_form';
+import TeamManagement from './pages/teams';
 
 // Create a dark theme
 const darkTheme = createTheme({
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/pages/dashboard" element={<Dashboard />} />
           <Route path="/pages/createprofile" element={<CreateProfile />} />
           <Route path='/pages/post_form' element={<PostCreationForm />}/>
+          <Route path='/pages/teams' element={<TeamManagement/>}/>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
