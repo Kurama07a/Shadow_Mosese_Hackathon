@@ -28,7 +28,7 @@ function Sidebar({ isActive = true }) {
       >
         <Box sx={{ height: '3vh' }} />
         <List>
-          {['Home Page', 'Show-off', 'Find Team Members', 'Connect with Alumni'].map((text) => (
+          {['Manage Teams', 'Show-off', 'Edit Profile', 'Connect with Alumni'].map((text) => (
             <ListItem key={text} sx={{ marginBottom: '8%', color: 'azure' }}>
               <ListItemText primary={text} />
             </ListItem>
@@ -76,7 +76,7 @@ function Sidebar({ isActive = true }) {
     >
       <Box sx={{ height: '3vh' }} />
       <List>
-        {['Home Page', 'Show-Off', 'Find Team Members', 'Connect with Alumni'].map((text) => (
+        {['Manage Teams', 'Show-Off', 'Edit Profile', 'Connect with Alumni'].map((text) => (
           <ListItem button key={text} sx={{ marginBottom: '8%', color: 'azure' }}>
             <ListItemText primary={text} />
           </ListItem>

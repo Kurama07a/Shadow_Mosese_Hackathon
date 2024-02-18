@@ -58,7 +58,6 @@ const PostCreationForm = () => {
                   <FormLabel component="legend">Post Type</FormLabel>
                   <RadioGroup row name="postType" value={postType} onChange={handleTypeChange}>
                     <FormControlLabel value="ProjectShowcase" control={<Radio />} label="Project Showcase" />
-                    <FormControlLabel value="CollaborationRequest" control={<Radio />} label="Collaboration Request" />
                     <FormControlLabel value="LookingForTeam" control={<Radio />} label="Looking For Team" />
                   </RadioGroup>
                 </FormControl>
@@ -111,39 +110,6 @@ const PostCreationForm = () => {
                   Upload Photo
                   <input type="file" hidden />
                 </Button>
-              </Grid>
-            </Grid>
-          )}
-          {postType === 'CollaborationRequest' && (
-            <Grid container spacing={2} sx={{ mt: 2 }}>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  label="Post Title"
-                  name="title"
-                  value={postDetails.title}
-                  onChange={handleChange}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  label="Personal Detail"
-                  name="personalDetail"
-                  multiline
-                  rows={4}
-                  value={postDetails.personalDetail}
-                  onChange={handleChange}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
-                  label="Proficiency in Tech Stack"
-                  name="techStack"
-                  value={postDetails.techStack}
-                  onChange={handleChange}
-                />
               </Grid>
             </Grid>
           )}
